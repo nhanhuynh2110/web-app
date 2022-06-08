@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install dependencies
         run: |
-          node ./common/scripts/install-run-rush.js 
+          yarn install
       - name: Build
         run: yarn build
       - name: Upload
